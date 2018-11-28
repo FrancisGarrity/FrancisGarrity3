@@ -1,0 +1,100 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Ilias Bartolini @FabAcademy
+description: >- # this means to ignore newlines until "baseurl:"
+  Blog about my assignments at FabAcademy2018 in Barcelona
+baseurl: "/2018/labs/barcelona/students/ilias-bartolini" # the subpath of your site, e.g. /blog
+url: "http://fab.academany.org" # the base hostname & protocol for your site, e.g. http://example.com
+lang: en
+copyright: '<style>.remove-external-link-icon:after { content: none !important; }</style>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br/><a class="remove-external-link-icon"  rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img style="display: inline; margin: 0.2rem; border-width:0" alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>'
+
+author:
+  name: Ilias Bartolini
+  email: ilias.bartolini@gmail.com
+  picture: /assets/img/ilias-bartolini-icon.jpg
+  social:
+    rss: http://fab.academany.org/2018/labs/barcelona/students/ilias-bartolini/feed.xml
+    twitter: iliasbartolini
+    facebook: iliasbartolini
+    lastfm: brain79
+    flickr: iliasbartolini
+    linkedin: iliasbartolini
+    github: iliasbartolini
+    stackoverflow: 225358/ilias-bartolini
+    email: mailto:ilias.bartolini@gmail.com
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-hydejack
+accent_image: /assets/img/lencois-bg.jpg
+
+layout: list
+plugins:
+  - jekyll-feed
+  - jekyll-paginate-v2
+  - jekyll-avatar
+  - jemoji
+
+disqus: ilias-bartolini-fabacademy-blog
+google_analytics: UA-28181963-2
+
+pagination:
+  enabled: true
+  per_page: 5
+  title: ':title - page :num'
+  permalink: '/page/:num/'
+  sort_reverse: true
+
+defaults:
+  - scope:
+      path: about.md
+    values:
+      menu: true
+      order: 1
+
+collections:
+  featured_tags:
+    permalink:         /tag/:name/
+    output:            true
+
+excerpt_separator: <!--more-->
+
+compress_html:
+  comments:            ['<!-- ', ' -->']
+  clippings:           all
+  endings:             all
+
+sass:
+  style:               compressed
+
+hydejack:
+#  no_drawer: true
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+   - README.md
+   - Gemfile
+   - Gemfile.lock
+   - node_modules
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
+   - .idea/
+   - .ruby-version
+   - .ruby-gemset
