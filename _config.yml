@@ -17,7 +17,7 @@ title: Ilias Bartolini @FabAcademy
 description: >- # this means to ignore newlines until "baseurl:"
   Blog about my assignments at FabAcademy2018 in Barcelona
 baseurl: "/2018/labs/barcelona/students/ilias-bartolini" # the subpath of your site, e.g. /blog
-url: "http://fab.academany.org" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://francisgarrity.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 lang: en
 copyright: '<style>.remove-external-link-icon:after { content: none !important; }</style>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br/><a class="remove-external-link-icon"  rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img style="display: inline; margin: 0.2rem; border-width:0" alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>'
 
